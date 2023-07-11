@@ -1,7 +1,7 @@
 import 'package:bmi_calculator/constants/colors.dart';
+import 'package:bmi_calculator/constants/const.dart';
 import 'package:bmi_calculator/constants/styles.dart';
 import 'package:flutter/material.dart';
-
 
 class BottomButton extends StatelessWidget {
   BottomButton({required this.onTap, required this.buttonTitle});
@@ -11,10 +11,10 @@ class BottomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: onTap,
       child: Container(
-        color: kBottomContainerColour,
+        color: kBottomContainerColor,
         margin: const EdgeInsets.only(top: 10.0),
         padding: const EdgeInsets.only(bottom: 20.0),
         width: double.infinity,
